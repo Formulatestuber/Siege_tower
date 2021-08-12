@@ -7,7 +7,7 @@ class Slingshot{
             length: 10
         }
 
-        rock_img=loadImage("rock.png");
+        //rock_img=loadImage("rock.png");
         this.sling = Constraint.create(options);
         this.pointB=pointB;
         World.add(world, this.sling);
@@ -24,8 +24,8 @@ class Slingshot{
             var pointA = this.sling.bodyA.position;
             var pointB = this.pointB;
             
-            strokeWeight(4);
-           strokeWeight(64,224,208)
+            //strokeWeight(1);
+           stroke(64,224,208)
            line(pointA.x, pointA.y, pointB.x, pointB.y);
 
         }

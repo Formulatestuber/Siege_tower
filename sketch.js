@@ -10,6 +10,7 @@ var slingShot;
 var rock_img;
 
 function preload(){
+  rock_img=loadImage("rock.png");
 }
 function setup() {
 
@@ -72,7 +73,7 @@ function draw() {
   // write image() to display the polygon image 
   //use the same x and y position as ball
 
-  image(this.rock_img,115,270,40,40);
+  image(rock_img,ball.position.x,ball.position.y,40,40);
 
 
   stroke(0,0,0);
